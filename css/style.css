@@ -1,5 +1,15 @@
-	body{
-
+		body{
+			font-family: 'Segoe UI';
+			max-width: 1920px;
+	width: 100%;
+}
+.wrapper {
+	margin: 0 auto;
+	max-width: 960px;
+	width: 100%;
+}
+* {
+	box-sizing: border-box;
 }
 
 /* Typography */
@@ -55,3 +65,107 @@ textarea {
 	padding-left: 20px;
 	padding-right: 20px;
 }
+header {
+	background-color: #23232e;
+	height: 100vh;
+	text-align: center;
+	color: #ffffff;
+	padding-top: 6%;
+}
+h1 {
+	font-weight: bold;
+	font-size: 5rem;
+	text-transform: uppercase;
+	margin: 0;
+	margin-bottom: 5%;
+}
+header p {
+	font-size: 1.125rem;
+	padding: 0 27%;
+	line-height: 1.875;
+}
+.logo {
+	margin-bottom: 15%;
+
+}
+.btn {
+	width: 45px;
+	height: 45px;
+	border: 2px solid #fff;
+	border-radius: 50%;
+	display: inline-block;
+	margin-top: 10%;
+	position: relative;
+}
+.btn::after {
+	content: '';
+	background: url(../img/stick.png);
+	width: 14px;
+	height: 8px;
+	position: absolute;
+	top: 19px;
+	left: 13px;
+}
+main {
+	padding-top: 10%;
+	background-image: url(../img/background.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: #464b4f;
+}
+.about h2 {
+	font-size: 1.875rem;
+	color: inherit;
+	line-height: 2.625rem;
+	text-align: center;
+	width: 89.3%;
+}
+main h3 {
+	font-size: 5rem;
+	color: inherit;
+	text-transform: uppercase;
+	font-weight: bold;
+	text-align: center;
+	padding-top: 12%;
+	padding-bottom: 9%;
+}
+.list,
+.list ul {
+	display: flex;
+	line-height: 1.875;
+}
+.list h4 {
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.list p {
+	color: #888a8b;
+}
+.list li {
+	width: 28%;
+}
+.list ul {
+	justify-content: space-around;
+}
+.list {
+	padding-bottom: 10%;
+}
+.first {
+	padding-bottom: 5%;
+}
+@media(max-width: 642px) {
+	.list, .list ul, p {
+		display: block;
+		width: 100%;
+	}
+	.list li,
+	.list p {
+		width: 100%;
+	}
+	.list li {
+		padding: 5px 0;
+	}
+	.about h2 {
+		line-height: 2rem;
+	}
+	}
